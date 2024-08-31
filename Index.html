@@ -248,5 +248,24 @@
         </div>
     </footer>
 
+        <!-- JavaScript -->
+        <script>
+            document.getElementById('HomeNav').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('HomeTar').scrollIntoView({ behavior: 'smooth' });
+            });
+            document.getElementById('GalleryNav').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('GalleryTar').scrollIntoView({ behavior: 'smooth' });
+            });
+            document.getElementById('AboutNav').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('AboutTar').scrollIntoView({ behavior: 'smooth' });
+            });
+            document.getElementById('ContactNav').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('ContactTar').scrollIntoView({ behavior: 'smooth' });
+            });
+        </script>
 </body>
 </html>
