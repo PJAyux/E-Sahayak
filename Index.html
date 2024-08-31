@@ -16,7 +16,7 @@
 
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <a href="Login.html">
-                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button>
+                <button type="button" id="login" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button>
 
             </a>
             <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
@@ -250,6 +250,12 @@
 
         <!-- JavaScript -->
         <script>
+            const statusButton = document.getElementById('login');
+            const loggedIn = localStorage.getItem('loggedIn');
+
+            if (loggedIn === 'true') {
+                statusButton.innerHTML = 'Logged In';
+                document.getElementById('login').innerHTML='Logged in';}
             document.getElementById('HomeNav').addEventListener('click', function (event) {
                 event.preventDefault();
                 document.getElementById('HomeTar').scrollIntoView({ behavior: 'smooth' });
@@ -266,6 +272,7 @@
                 event.preventDefault();
                 document.getElementById('ContactTar').scrollIntoView({ behavior: 'smooth' });
             });
-        </script>
+            </script>
+            
 </body>
 </html>

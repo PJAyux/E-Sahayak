@@ -21,14 +21,14 @@
 </head>
 <body>
     
-    <h1 class="flex justify-center p-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Problem ID: XXXX</h1>
+    <h1 id='probid'class="flex justify-center p-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Problem ID: XXXX</h1>
     <section class="p-8">
     <h3 class="text-3xl font-bold dark:text-white pt-2 pb-2">Problem</h3>
-    <h6 class="text-lg dark:text-white">problem statement</h6>
+    <h6 id='problem' class="text-lg dark:text-white">problem statement</h6>
     <h3 class="text-3xl font-bold dark:text-white pt-2 pb-2">Category</h3>
-    <h6 class="text-lg dark:text-white">Problem Category</h6>
+    <h6 id='category' class="text-lg dark:text-white">Problem Category</h6>
     <h3 class="text-3xl font-bold dark:text-white pt-2 pb-2">Decription</h3>
-    <h6 class="text-lg dark:text-white">Problem Dexcription</h6>
+    <h6 id='message' class="text-lg dark:text-white">Problem Dexcription</h6>
 
 
 
@@ -126,4 +126,10 @@
     </section>
 
 </body>
+<script>
+    document.getElementById('probid').innerHTML='Problem ID : '+localStorage.getItem('PID');
+    document.getElementById('problem').innerHTML=localStorage.getItem('problem');
+    document.getElementById('category').innerHTML=localStorage.getItem('category');
+    document.getElementById('message').innerHTML=localStorage.getItem('message');
+</script>
 </html>
