@@ -51,10 +51,14 @@ const QuerySchema = new mongoose.Schema({
       // Create and save a new document
       const problem = new Problem(data);
       const result = await problem.save();
-  
       console.log(`Inserted document with _id: ${result._id}`);
+
+      const rows = await querries.find(); // Fetch all documents from the collection
+      return rows;
+  
     } catch (err) {
       console.error('Error:', err);
+      console.error('Error extracting rows:', err);
     } finally {
       // Disconnect from MongoDB
       await mongoose.disconnect();
@@ -62,14 +66,7 @@ const QuerySchema = new mongoose.Schema({
   }
   
   run().catch(console.dir);
-
-
-
-
-
-
-
-
+module.exports=run;
 
 
 // Start the server

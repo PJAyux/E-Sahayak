@@ -29,52 +29,28 @@
     <h6 id='category' class="text-lg dark:text-white">Problem Category</h6>
     <h3 class="text-3xl font-bold dark:text-white pt-2 pb-2">Decription</h3>
     <h6 id='message' class="text-lg dark:text-white">Problem Dexcription</h6>
-
-
-
     
     <h3 class="text-3xl font-bold dark:text-white pt-4">Problem Media</h3>
-    <div id="gallery" class="relative w-full p-4" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="problemImages/images.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <img src="problemImages/imddddages.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="problemImages/Untitled.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-            </div>
-            <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="problemImages/Ussddsntitled.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-            </div>
+
+    <div class="flex justify-between p-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="problemImages/images.jpg" alt="">
         </div>
-        <!-- Slider controls -->
-        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                </svg>
-                <span class="sr-only">Previous</span>
-            </span>
-        </button>
-        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span class="sr-only">Next</span>
-            </span>
-        </button>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="problemImages/imddddages.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="problemImages/Untitled.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="problemImages/Ussddsntitled.jpg" alt="">
+        </div>
     </div>
+
 
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 
+    <p class="flex justify-center font-extrabold text-6xl text-gray-900 dark:text-white p-8">Ticket Tracking</p>
     <table>
         <!-- Create 11 rows -->
         <!-- Row 1 (Header) -->
@@ -85,30 +61,72 @@
         </tr>
         <!-- Rows 2 to 11 -->
         <tr>
-            <td>ISHA foundations</td><td>Row 1, Col 2</td><td>Row 1, Col 3</td>
+            <td>ISHA Foundation</td>
+            <td>Inactive</td>
+            <td></td>
         </tr>
         <tr>
-            <td>SMILES</td><td>Row 2, Col 2</td><td>Row 2, Col 3</td>
+            <td>SMILES</td>
+            <td>Pending</td>
+            <td>Insufficient site labour</td>
         </tr>
         <tr>
-            <td>Give INDIA</td><td>Row 3, Col 2</td><td>Row 3, Col 3</td>
+            <td>Give INDIA</td>
+            <td>Inactive</td>
+            <td>Supports various social causes through donations.</td>
         </tr>
         <tr>
-            <td>Row 4, Col 1</td><td>Row 4, Col 2</td><td>Row 4, Col 3</td>
+            <td>Oxfam India</td>
+            <td>Inactive</td>
+            <td></td>
         </tr>
         <tr>
-            <td>Row 5, Col 1</td><td>Row 5, Col 2</td><td>Row 5, Col 3</td>
+            <td>CRY (Child Rights and You)</td>
+            <td>Inactive</td>
+            <td></td>
         </tr>
         <tr>
-            <td>Row 6, Col 1</td><td>Row 6, Col 2</td><td>Row 6, Col 3</td>
+            <td>Akshaya Patra</td>
+            <td id="green" class="">Inactive</td>
+            <td></td>
         </tr>
         <tr>
-            <td>Row 7, Col 1</td><td>Row 7, Col 2</td><td>Row 7, Col 3</td>
+            <td>HelpAge India</td>
+            <td>Inactive</td>
+            <td></td>
         </tr>
         <tr>
+            <td>Care India</td>
+            <td>Pending</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Pratham</td>
+            <td>Inactive</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Smile Foundation</td>
+            <td>Inactive</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Goonj</td>
+            <td>Pending</td>
+            <td>Focuses on urban-rural waste management and disaster relief.</td>
+        </tr>
     </table>
+    
+    <div class="mb-6 pt-8">
+        <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Remarks</label>
+        <input type="text" id="default-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    </div>
 
-
+    <div class="flex justify-center p-8">
+        <button type="button" id='a' onclick="accept()" class="p-8 text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Accept</button>
+        <button type="button" id='b' onclick="collaborate()"class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Collaborate</button>
+        <button type="button" id='c' onclick="reject()"class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Decline</button>
+    </div>
 
     </section>
 
@@ -118,5 +136,16 @@
     document.getElementById('problem').innerHTML=localStorage.getItem('problem');
     document.getElementById('category').innerHTML=localStorage.getItem('category');
     document.getElementById('message').innerHTML=localStorage.getItem('message');
+    function accept(){
+        document.getElementById('a').innerHTML='Accepted';
+        document.getElementById('green').style.backgroundColor='#5ced73';
+        document.getElementById('green').innerHTML='Active';
+    }
+    function collaborate(){
+        document.getElementById('b').innerHTML='Collaborated';
+    }
+    function reject(){
+        document.getElementById('c').innerHTML='Declined';
+    }
 </script>
 </html>
