@@ -218,9 +218,9 @@
     
     
     // Using Fetch API
-fetch('http://localhost:5000/queries', {
+fetch('http://localhost:8000', {
     method: 'POST', 
-    mode:"no-cors",
+    // mode:"no-cors",
     headers: {
         'Content-Type': 'application/json'
     },
@@ -236,6 +236,6 @@ fetch('http://localhost:5000/queries', {
 .then(data => console.log(data))
 .catch(error => console.error('Error:', error));
 });
-
+console.log(document.getElementById('problem').value,);
 </script>
 </html>
